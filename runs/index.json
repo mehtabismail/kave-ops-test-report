@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-11-02T18:07:20.720Z",
+  "runCount": 1,
+  "runs": [
+    {
+      "run": 1,
+      "url": "1/",
+      "buildName": "#1 (local)",
+      "buildUrl": "",
+      "runAt": "2026-11-02T18:07:11Z",
+      "branch": "e2e/detox-setup (local, uncommitted E2E suite)",
+      "commit": "99bb4c6",
+      "trigger": "local publish",
+      "included": "Unit (Jest) + E2E (Detox, iOS)",
+      "total": 280,
+      "passed": 244,
+      "failed": 1,
+      "broken": 35,
+      "skipped": 0,
+      "e2eTests": "212",
+      "e2eFailed": "36",
+      "e2eUploadedAt": "2026-11-02T18:05:57Z",
+      "e2eStatus": ""
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KAVE OPS Test Report — run history</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff; --fg: #1a1d21; --muted: #6b7280; --line: #e5e7eb;
+    --card: #f9fafb; --pass: #1f9254; --fail: #d64545; --accent: #2563eb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171a; --fg: #e6e8ea; --muted: #9aa3ad; --line: #2b3036;
+      --card: #1b1f24; --pass: #45c07f; --fail: #f2726f; --accent: #6ea8fe;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px; background: var(--bg); color: var(--fg);
+    font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; }
+  .sub a { color: var(--accent); }
+  .filters {
+    display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end;
+    padding: 14px; background: var(--card); border: 1px solid var(--line);
+    border-radius: 8px; margin-bottom: 16px;
+  }
+  .filters label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+  .filters input, .filters select {
+    background: var(--bg); color: var(--fg); border: 1px solid var(--line);
+    border-radius: 6px; padding: 6px 8px; font: inherit;
+  }
+  .filters .check { flex-direction: row; align-items: center; gap: 6px; color: var(--fg); font-size: 13px; }
+  button {
+    background: transparent; color: var(--accent); border: 1px solid var(--line);
+    border-radius: 6px; padding: 7px 12px; font: inherit; cursor: pointer;
+  }
+  .scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; min-width: 760px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); background: var(--card); }
+  tr:last-child td { border-bottom: 0; }
+  .pass { color: var(--pass); } .fail { color: var(--fail); font-weight: 600; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; }
+  a { color: var(--accent); }
+  .empty { padding: 28px; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Run history</h1>
+  <p class="sub">Every archived run keeps its full report. <a href="../">Open the latest run →</a></p>
+
+  <div class="filters">
+    <label>From<input type="date" id="from"></label>
+    <label>To<input type="date" id="to"></label>
+    <label>Branch<select id="branch"><option value="">All</option></select></label>
+    <label class="check"><input type="checkbox" id="onlyFailed"> Only runs with failures</label>
+    <button id="reset">Reset</button>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead><tr>
+        <th>Run</th><th>Date (UTC)</th><th>Branch</th><th>Commit</th>
+        <th>Result</th><th>E2E tests</th><th>Links</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  <p class="sub" id="count" style="margin-top:12px"></p>
+</div>
+
+<script>
+(function () {
+  var all = [];
+  var els = {
+    from: document.getElementById("from"),
+    to: document.getElementById("to"),
+    branch: document.getElementById("branch"),
+    onlyFailed: document.getElementById("onlyFailed"),
+    rows: document.getElementById("rows"),
+    count: document.getElementById("count")
+  };
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+
+  // Runs are stamped in UTC; compare on the date part so a filter means the same
+  // thing regardless of the viewer's timezone.
+  function dayOf(run) { return (run.runAt || "").slice(0, 10); }
+
+  function render() {
+    var from = els.from.value, to = els.to.value;
+    var branch = els.branch.value, onlyFailed = els.onlyFailed.checked;
+
+    var shown = all.filter(function (r) {
+      var d = dayOf(r);
+      if (from && (!d || d < from)) return false;
+      if (to && (!d || d > to)) return false;
+      if (branch && r.branch !== branch) return false;
+      if (onlyFailed && !(r.failed + r.broken)) return false;
+      return true;
+    });
+
+    if (!shown.length) {
+      els.rows.innerHTML = '<tr><td colspan="7" class="empty">No runs match these filters.</td></tr>';
+      els.count.textContent = "0 of " + all.length + " runs";
+      return;
+    }
+
+    els.rows.innerHTML = shown.map(function (r) {
+      var bad = r.failed + r.broken;
+      var result = bad
+        ? '<span class="fail">' + bad + " failed</span> / " + r.total
+        : '<span class="pass">' + r.passed + " passed</span>";
+      var e2e = r.e2eTests
+        ? esc(r.e2eTests) + " (" + esc(r.e2eFailed || "0") + " failed)"
+        : '<span style="color:var(--muted)">—</span>';
+      var ci = r.buildUrl ? ' · <a href="' + esc(r.buildUrl) + '">CI</a>' : "";
+      return "<tr>" +
+        '<td class="mono">#' + esc(r.run) + "</td>" +
+        '<td class="mono">' + esc((r.runAt || "").replace("T", " ").replace("Z", "")) + "</td>" +
+        "<td>" + esc(r.branch || "—") + "</td>" +
+        '<td class="mono">' + esc(r.commit || "—") + "</td>" +
+        "<td>" + result + "</td>" +
+        "<td>" + e2e + "</td>" +
+        '<td><a href="' + esc(r.url) + '">Report</a>' + ci + "</td>" +
+      "</tr>";
+    }).join("");
+    els.count.textContent = shown.length + " of " + all.length + " runs";
+  }
+
+  ["from", "to", "branch", "onlyFailed"].forEach(function (k) {
+    els[k].addEventListener("change", render);
+  });
+  document.getElementById("reset").addEventListener("click", function () {
+    els.from.value = ""; els.to.value = ""; els.branch.value = "";
+    els.onlyFailed.checked = false; render();
+  });
+
+  fetch("index.json?cb=" + Date.now())
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      all = data.runs || [];
+      var branches = [];
+      all.forEach(function (r) {
+        if (r.branch && branches.indexOf(r.branch) === -1) branches.push(r.branch);
+      });
+      branches.sort().forEach(function (b) {
+        var o = document.createElement("option");
+        o.value = b; o.textContent = b;
+        els.branch.appendChild(o);
+      });
+      render();
+    })
+    .catch(function () {
+      els.rows.innerHTML = '<tr><td colspan="7" class="empty">Could not load index.json.</td></tr>';
+    });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Property Details (manual chapter 5) and Map View (chapter 6).","7251","INS-MAP-03 my-location and zoom controls respond","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MAP — Map View","",""
+"","4579","INS-PROF-16 Terms of Service opens and scrolls","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"","9391","INS-AUTH-10 Log out asks first; Cancel keeps you signed in","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — session","",""
+"","0","blocks ""call ٠٥٥١٢٣٤٥٦٧""","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"","0","09:30 → 9:30 AM","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","1","14:00 → 2:00 PM","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","13439","INS-PROP-07 the bottom button matches the status (manual table 5.2)","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"","6752","INS-AUTH-05 a wrong password keeps you on Sign in with an error","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — sign in","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","10895","SP-HOME-05 search finds a request by its code","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-HOME — service requests","",""
+"","5","accepts a complete ticket","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/support/utils/__tests__","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","972","INS-INSP-03 Submit stays greyed out while a checklist is incomplete","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","90007","SP-MSG-01 the Messages tab shows the inbox with Search by name","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-MSG — messages","",""
+"","16107","INS-NOTIF-01 the bell opens Notifications with a count and Mark All Read","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-NOTIF — notifications","",""
+"","2","reports an invalid email and a weak password together","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","0","labels the property type from a string or an object","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/domain/types/__tests__","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300500","INS-INSP-23 Show Details shows the Final Verdict card with the remarks and no Submit","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","16367","SP-ACT-06 Accept on the detail page accepts; the footer turns into Mark as completed @mutating","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-ACT — respond and complete","",""
+"","0","offers the map only for Assigned, Accepted and InProgress","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/domain/types/__tests__","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","16400","INS-SUP-06 a valid ticket submits and shows ""Ticket Submitted Successfully""","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","6722","SP-HOME-03-rejected the rejected tab lists only rejected requests","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-HOME — service requests","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300472","INS-INSP-25 Edit Details → Save Changes updates the item; the verdict stays","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","4596","INS-PROP-06-safety Safety details expands and collapses","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"","6304","SP-AUTH-07 the environment switcher closes on Cancel","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — sign in","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","28860","SP-ACT-03 rejecting with a reason moves the request to Rejected @mutating","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-ACT — respond and complete","",""
+"RejectServiceRequestSheet: the reason must be 5–250 characters before it can be sent.","3","closes on Cancel","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/serviceRequest/components/__tests__","",""
+"DateOfBirthInput Component Tests","13","renders with placeholder when no date selected","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/ui/components/form/__tests__","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300696","INS-INSP-21 remarks are capped at 250 characters","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"RejectServiceRequestSheet: the reason must be 5–250 characters before it can be sent.","35","counts characters and keeps Reject request disabled under 5","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/serviceRequest/components/__tests__","",""
+"","1","rejects ""short"" (too-short)","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/services/deep-linking/__tests__","",""
+"","1","needs a category","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/support/utils/__tests__","",""
+"","7795","INS-AUTH-04 the eye icon shows and hides the password","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — sign in","",""
+"","77962","INS-AUTH-01 an empty form is not submitted and both fields show an error","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — sign in","",""
+"","0","formats the API value with the fixed +966- prefix","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","0","allows ""Inspection on 2026-11-02""","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"","24064","INS-PROF-04 editing the first name saves (""Profile updated successfully!"") and shows on Profile; then restored","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","8632","INS-SUP-12 a closed ticket says it is closed and has no message box","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","30090","SP-DET-10 a rejected request shows its rejection reason","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-DET — service request detail","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","989","SP-DET-05-Safetydetails Safetydetails expands and collapses","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-DET — service request detail","",""
+"DateOfBirthInput Component Tests","2","renders label when provided","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/ui/components/form/__tests__","",""
+"","1","pluralizes the inbox count","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/notifications/utils/__tests__","",""
+"","9594","INS-AUTH-01b empty fields say ""is required"" (BUG-001: the last rule's message wins)","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — sign in","",""
+"DateOfBirthInput Component Tests","2","has accessibility label","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/ui/components/form/__tests__","",""
+"","8886","INS-AUTH-11 Log out signs you out","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — session","",""
+"","13564","INS-EXP-01 Explore shows the map with your name, search and the bell","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-EXP — explore","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","11826","INS-SUP-03 a new ticket cannot be submitted until title, category and description are valid","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"","1","blocks ""mail me at ‹email›""","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"","2","labels the verdict for the completed view","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/domain/types/__tests__","",""
+"","947","INS-MSG-06 Send stays off for an empty message","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MSG — messages","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","625","INS-HOME-02 every status filter chip is there and All is selected by default","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"","6937","SP-AUTH-10 Log out asks first; Cancel keeps you signed in","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — session","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","9360","SP-HOME-08 Load more appears only when there is a next page and loads it","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-HOME — service requests","",""
+"","1","formats distances as the trip summary shows them","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","1","leaves unknown formats alone and dashes empty values","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","51481","SP-ACT-01 the reject sheet needs 5–250 characters; Cancel keeps the request","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-ACT — respond and complete","",""
+"","31778","SP-EXP-02 search area suggests places; choosing one moves the map there","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-EXP — explore","",""
+"","0","accepts 8 to 15 digits only","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","11857","INS-EXP-04 × clears the search and the back arrow leaves search","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-EXP — explore","",""
+"","2","rejects phone numbers that are too short","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","183","INS-INSP-05 the in-progress card at the top of Home shows this inspection","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","9913","INS-NOTIF-03 tapping a notification opens what it is about","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-NOTIF — notifications","",""
+"","0","allows ""Arrive at 10:30 tomorrow""","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300953","INS-INSP-18 recording every item enables Submit","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","25780","INS-PROF-08 Login & security validates the form before saving","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","694","INS-PROP-02 the photo counter reads position/total","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"","13289","SP-AUTH-02 rejects a malformed email and a password that breaks the rules","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — sign in","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","19313","SP-ACT-02 ✓ on a card accepts the request: ""Service request accepted"", Complete appears @mutating @smoke","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-ACT — respond and complete","",""
+"","93871","SP-PROF-01 Profile shows your name, email and the menu for your account type","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"","8623","SP-AUTH-11 Log out signs you out","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — session","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","19986","INS-PROP-09 Message host opens a conversation with the host","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"","2","passes a valid email login","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","18683","SP-AUTH-06 Forgot Password opens the reset screen in the selected mode","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — sign in","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","43649","INS-SUP-05 a photo can be attached from Browse Files","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"Accept or reject a request (manual chapter 4). The reject sheet is checked
+without submitting; accepting and rejecting consume Pending requests.","16294","INS-REQ-02 the reason is capped at 250 characters","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-REQ — accept or reject","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","19023","INS-HOME-05 search finds a request by its property name; × clears it","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"Accept or reject a request (manual chapter 4). The reject sheet is checked
+without submitting; accepting and rejecting consume Pending requests.","15330","INS-REQ-03 Cancel closes the sheet and keeps the request Pending","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-REQ — accept or reject","",""
+"","13580","INS-PROF-17 FAQ questions open to show the answer and close again","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"","72727","INS-AUTH-15 the code screen shows the email and a countdown, and refuses a wrong code","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — verification code","",""
+"","0","rejects ""has spaces in it"" (invalid-chars)","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/services/deep-linking/__tests__","",""
+"","10464","INS-PROF-14 a notification switch turns off and back on","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","830","INS-INSP-09 a required description blocks the slide with ""Description is mandatory for this item.""","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","22615","INS-AUTH-09 the session survives an app relaunch","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — session","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","7844","INS-HOME-03-Assigned the Assigned chip lists only Assigned requests","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","13774","INS-INSP-04 the request is now InProgress on Home, with Continue and progress","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","1","hides Support Tickets from a service provider","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/notifications/utils/__tests__","",""
+"","1","suggests Not Ready when any item was rejected, Ready otherwise","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/domain/types/__tests__","",""
+"","15129","SP-PROF-07 Street address suggests places as you type","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","5341","INS-SUP-04 Category offers Accounts & Billing, Technical Support, General Issue and Property Issue","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"","2","treats ""Completed"" in any spacing or case as completed","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/domain/types/__tests__","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","5132","INS-MAP-05 Yes, I’ve arrived shows ""You have arrived at the location!"" with Start","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MAP — Map View","",""
+"","28264","SP-PROF-08 Login & security validates the form before saving","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"","8811","SP-AUTH-04 the eye icon shows and hides the password","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — sign in","",""
+"","9927","SP-NOTIF-03 tapping a notification opens what it is about","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-NOTIF — notifications","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","86501","SP-HOME-01 Home shows ""Service requests"" for a provider, not inspection requests @smoke","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-HOME — service requests","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","2726","INS-SUP-07 Back To Support lists the new ticket","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"","1","allows responding only when Assigned and completing only when Accepted","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/serviceRequest/utils/__tests__","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300393","INS-INSP-12 Accept + slide records the item: ""Inspection item updated successfully"", status Accepted","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","117774","SP-AUTH-12 Remember me fills in the email next time","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — session","",""
+"","5933","INS-PROF-15 Support & Legal holds Terms of Service, FAQ and Support Center","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"","25203","SP-PROF-10 Languages & currency opens both pickers and saves","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300809","INS-INSP-17 pause: Home shows the progress; Continue on Property Details goes back to the checklists","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","7734","INS-HOME-03-Unassigned the Unassigned chip lists only Unassigned requests","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","12703","SP-ACT-07 Mark as completed on the detail page completes it; no actions remain @mutating","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-ACT — respond and complete","",""
+"","10846","INS-MSG-08 Delete chat asks to confirm; Cancel keeps the conversation","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MSG — messages","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","93268","INS-SUP-01 Profile › Support & Legal › Support Center opens the Support Centre with All / Open / Closed","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"","18127","INS-MSG-04 sending a message shows it in the conversation straight away","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MSG — messages","",""
+"","1","blocks ""call +966 55 123 4567""","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"","15603","SP-PROF-09 a wrong old password is refused by the server","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","2500","SP-DET-08 the footer matches the status: Accept/Reject when awaiting, Mark as completed when accepted","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-DET — service request detail","",""
+"","0","hides contact details in received text","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"","607","SP-MSG-03 search by the participant's name finds the conversation","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-MSG — messages","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","3927","INS-HOME-07 each card shows status, inspection type, title and subtitle","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","5247","INS-SUP-09 the ticket opens titled with its ID and says it awaits the support team","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","6815","INS-SUP-11 the info button shows the ticket details","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"","0","00:15 → 12:15 AM","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","16628","INS-MAP-08 Map View on Property Details opens the same map","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MAP — Map View","",""
+"RejectServiceRequestSheet: the reason must be 5–250 characters before it can be sent.","7","sends the trimmed reason once it is long enough","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/serviceRequest/components/__tests__","",""
+"","1","resolves the chosen segment back to its option id","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/domain/types/__tests__","",""
+"","116714","INS-AUTH-12 Remember me fills in the email next time","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — session","",""
+"","1","refuses a confirmation that does not match","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","1","maps Ready / Not ready options","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/domain/types/__tests__","",""
+"","0","round-trips a stored value back to the editable digits","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","17088","SP-NOTIF-01 the bell opens Notifications with a count and Mark All Read","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-NOTIF — notifications","",""
+"","7076","SP-AUTH-05 a wrong password keeps you on Sign in with an error","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — sign in","",""
+"","5814","SP-MSG-04 sending a message shows it in the conversation straight away","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-MSG — messages","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300760","INS-INSP-16 the checklist progress counts the recorded items","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","0","blocks ""see www.example.com""","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"","16029","INS-PROF-09 a wrong old password is refused by the server","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"","9325","SP-PROF-12 Messages in the menu opens the inbox","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","84170","INS-HOME-01 header shows your name, the greeting for this hour, search and the bell @smoke","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","8333","INS-HOME-11 the bell opens Notifications","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"Working offline (manual chapter 9).
+
+A simulator's network cannot be cut from a test, so the app is relaunched with
+`-kaveE2ENetwork offline` (src/config/e2e.ts), which makes it behave exactly as
+when NetInfo reports no connection: banner, outbox, ""will sync"" messages.
+Relaunching online lets the outbox sync. Requests themselves are not blocked by
+the simulator, so this covers the app's offline mode, not a real dead network.","6877","INS-OFF-04 accepting offline updates the card at once and says it will sync @mutating","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-OFF — working offline","",""
+"","5148","SP-MSG-07 the attach button offers gallery, camera and document","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-MSG — messages","",""
+"Working offline (manual chapter 9).
+
+A simulator's network cannot be cut from a test, so the app is relaunched with
+`-kaveE2ENetwork offline` (src/config/e2e.ts), which makes it behave exactly as
+when NetInfo reports no connection: banner, outbox, ""will sync"" messages.
+Relaunching online lets the outbox sync. Requests themselves are not blocked by
+the simulator, so this covers the app's offline mode, not a real dead network.","200","INS-OFF-05 Profile shows the change(s) pending sync","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-OFF — working offline","",""
+"","83904","INS-MSG-01 the Messages tab shows the inbox with Search by name","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MSG — messages","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","5143","SP-HOME-06 a search with no match says so; × clears it","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-HOME — service requests","",""
+"","11143","INS-AUTH-03 phone mode has the fixed +966 field and validates the number","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — sign in","",""
+"","5696","INS-MSG-02 a search with no match says ""No conversations match your search.""","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MSG — messages","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","2309","SP-DET-06 the host card shows the host with Message host (not for a rejected request)","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-DET — service request detail","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","1004","INS-MAP-02 the trip summary shows the distance to the property (straight line when no route)","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MAP — Map View","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","1396","SP-DET-02 Services requested lists each service with its date and time","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-DET — service request detail","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","98668","SP-DET-01 shows the property, the request code and status @smoke","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-DET — service request detail","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300414","INS-INSP-11 required photos need at least 2: one photo keeps the slider off","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","6463","INS-MAP-04 I’ve Arrived asks to confirm and warns how far away you are; Cancel closes","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MAP — Map View","",""
+"DateOfBirthInput Component Tests","1","uses default placeholder when not provided","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/ui/components/form/__tests__","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","8506","INS-HOME-09 tapping a card (not a button) opens Property Details","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"Accept or reject a request (manual chapter 4). The reject sheet is checked
+without submitting; accepting and rejecting consume Pending requests.","104518","INS-REQ-01 Reject opens ""Reason for rejecting?""; Submit stays off under 5 characters","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-REQ — accept or reject","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","4502","INS-PROP-06-rules Property rules expands and collapses","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","7946","INS-PROP-05 Location shows the address with View Direction","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"","52767","SP-AUTH-01 an empty form is not submitted and both fields show an error","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — sign in","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","4123","INS-INSP-02 each checklist shows its name and items finished out of total","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","25508","INS-SUP-14 Back To Home on the success screen returns Home","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300946","INS-INSP-22 Submit sends the verdict: ""Inspection submitted successfully"", the request is Completed @smoke","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","96681","INS-INSP-01 Start on a card starts the inspection and opens the checklists @smoke","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","96372","INS-PROP-01 shows the summary: type and city, name, requested date, beds, bathrooms, guests @smoke","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","10799","INS-HOME-08 card buttons match the status (manual table 3.5)","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","4999","INS-HOME-03-Completed the Completed chip lists only Completed requests","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"","0","allows ""Room 1204""","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"","10532","SP-AUTH-01b empty fields say ""is required"" (BUG-001: the last rule's message wins)","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — sign in","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","3713","INS-MAP-06 closing the arrival panel keeps you arrived: Start replaces I’ve Arrived","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MAP — Map View","",""
+"","1","strips separators and a leading 966","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300554","INS-INSP-20 Cancel closes the verdict without submitting; reopening starts from the suggestion","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","4793","INS-PROF-03 the gender dropdown offers Male, Female and Other","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","10324","INS-HOME-10 the in-progress card opens the list of inspections underway","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"","11038","INS-MSG-05 a message with a phone number or email is not sent","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MSG — messages","",""
+"","15451","SP-PROF-05 Email Edit opens the change-email sheet","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"","8340","SP-PROF-02 Personal information shows name, gender, date of birth, phone and email","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"","4","shows Inspections, Messages and Support Tickets to an inspector","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/notifications/utils/__tests__","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","665","SP-DET-05-Propertyrules Propertyrules expands and collapses","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-DET — service request detail","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","18767","INS-MAP-01 the map pin on a card opens Map View with the trip summary and Google Maps","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MAP — Map View","",""
+"","0","formats durations in minutes and hours","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300593","INS-INSP-15 a recorded item can be changed: the slider then reads Save","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","17504","INS-PROF-11 Theme switches between System default, Light and Dark","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"DateOfBirthInput Component Tests","1","shows error message when error prop is passed","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/ui/components/form/__tests__","",""
+"","4","says ""is required"" for empty fields (BUG-001)","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","1","blocks ""wa.me/‹phone›""","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"","1","colours Unassigned and Rejected the same","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/domain/types/__tests__","",""
+"","4713","SP-MSG-06 Send stays off for an empty message","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-MSG — messages","",""
+"","73025","SP-AUTH-14 an invite link with a malformed token shows the link error screen","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — set up password link","",""
+"","14996","INS-PROF-07 Street address suggests places as you type","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"","0","allows """"","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"","7701","INS-PROF-13 Notifications lists a switch per notification type","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"","4","asks the provider to respond to an Assigned request","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/serviceRequest/utils/__tests__","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","23941","SP-ACT-05 Complete → Complete marks it done: ""Service request completed"" @mutating","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-ACT — respond and complete","",""
+"","10767","SP-PROF-14 a notification switch turns off and back on","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"Working offline (manual chapter 9).
+
+A simulator's network cannot be cut from a test, so the app is relaunched with
+`-kaveE2ENetwork offline` (src/config/e2e.ts), which makes it behave exactly as
+when NetInfo reports no connection: banner, outbox, ""will sync"" messages.
+Relaunching online lets the outbox sync. Requests themselves are not blocked by
+the simulator, so this covers the app's offline mode, not a real dead network.","3132","INS-OFF-02 Home still lists the requests seen online","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-OFF — working offline","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","7730","INS-PROP-06-amenities Amenities expands and collapses","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"","44","formats dates day first","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/serviceRequest/utils/__tests__","",""
+"Working offline (manual chapter 9).
+
+A simulator's network cannot be cut from a test, so the app is relaunched with
+`-kaveE2ENetwork offline` (src/config/e2e.ts), which makes it behave exactly as
+when NetInfo reports no connection: banner, outbox, ""will sync"" messages.
+Relaunching online lets the outbox sync. Requests themselves are not blocked by
+the simulator, so this covers the app's offline mode, not a real dead network.","4106","INS-OFF-03 a request opened online opens offline","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-OFF — working offline","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300638","INS-INSP-24 a submitted item is read-only until Edit Details; Cancel discards the change","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","10171","INS-MSG-03 search by the participant's name finds the conversation","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MSG — messages","",""
+"","17367","INS-PROF-06 Address shows its fields; an empty city is refused with ""City is required""","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"","5626","SP-MSG-02 a search with no match says ""No conversations match your search.""","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-MSG — messages","",""
+"","11864","INS-AUTH-02 rejects a malformed email and a password that breaks the rules","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — sign in","",""
+"","25663","INS-PROF-10 Languages & currency opens both pickers and saves","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300207","INS-INSP-10 a photo can be added (count n/5) and removed after confirming Delete","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"Working offline (manual chapter 9).
+
+A simulator's network cannot be cut from a test, so the app is relaunched with
+`-kaveE2ENetwork offline` (src/config/e2e.ts), which makes it behave exactly as
+when NetInfo reports no connection: banner, outbox, ""will sync"" messages.
+Relaunching online lets the outbox sync. Requests themselves are not blocked by
+the simulator, so this covers the app's offline mode, not a real dead network.","349","INS-OFF-06 logging out with unsynced work warns first; Cancel keeps you signed in","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-OFF — working offline","",""
+"","8652","SP-EXP-03 Use my current location is offered and works","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-EXP — explore","",""
+"","13982","SP-EXP-01 Explore shows the map with your name, search and the bell","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-EXP — explore","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","7552","INS-SUP-13 Cancel on a new ticket goes back without creating one","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"","5309","INS-MSG-07 the attach button offers gallery, camera and document","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MSG — messages","",""
+"","0","needs a title of at most 150 characters","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/support/utils/__tests__","",""
+"","4859","SP-MSG-05 a message with a phone number or email is not sent","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-MSG — messages","",""
+"","0","12:00 → 12:00 PM","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","0","rejects """" (empty)","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/services/deep-linking/__tests__","",""
+"","11100","SP-EXP-04 × clears the search and the back arrow leaves search","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-EXP — explore","",""
+"","18666","SP-PROF-11 Theme switches between System default, Light and Dark","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"","75076","SP-AUTH-15 the code screen shows the email and a countdown, and refuses a wrong code","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — verification code","",""
+"","0","blocks ""call ‹phone›""","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/messaging/utils/__tests__","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","6452","INS-INSP-07 the item shows Description, Photos and Status; the slider is off until a status is chosen","E2E (Detox)","2026-11-02","failed","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","23440","SP-AUTH-09 the session survives an app relaunch","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — session","",""
+"Accept or reject a request (manual chapter 4). The reject sheet is checked
+without submitting; accepting and rejecting consume Pending requests.","26750","INS-REQ-06 the arrow button in the sheet header submits the rejection too @mutating","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-REQ — accept or reject","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","20638","INS-INSP-08 notes are capped at 250 characters","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","1966","INS-PROP-08 Back returns to Home","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","1155","SP-DET-03 admin and requester instructions show when the request has any","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-DET — service request detail","",""
+"Accept or reject a request (manual chapter 4). The reject sheet is checked
+without submitting; accepting and rejecting consume Pending requests.","7190","INS-REQ-04b the accepted card reads ""Accepted"" (BUG-009: it reads Assigned)","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-REQ — accept or reject","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","1180","INS-PROP-04 the host section lists the host details and Message host","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"","2","reads coordinates sent as strings and ignores 0,0","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/domain/types/__tests__","",""
+"","5","shows the backend status as the label","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/domain/types/__tests__","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","11232","INS-HOME-03-InProgress the InProgress chip lists only InProgress requests","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","8521","INS-INSP-06 Continue opens a checklist; every item starts Pending","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","25135","INS-NOTIF-02 Mark All Read clears the unread badge","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-NOTIF — notifications","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300679","INS-INSP-19 Final Verdict suggests Not Ready when an item was rejected; the other option can be picked","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","0","hides a zero badge","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/notifications/utils/__tests__","",""
+"","87290","INS-PROF-01 Profile shows your name, email and the menu for your account type","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"Accept or reject a request (manual chapter 4). The reject sheet is checked
+without submitting; accepting and rejecting consume Pending requests.","26871","INS-REQ-05 ✕ rejects a Pending request with a reason: it moves to Unassigned @mutating","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-REQ — accept or reject","",""
+"","13349","INS-PROF-05 Email Edit opens the change-email sheet","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"","4897","INS-AUTH-07 the environment switcher closes on Cancel","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — sign in","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","13334","SP-HOME-03-completed the completed tab lists only completed requests","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-HOME — service requests","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","9759","INS-SUP-02 Open and Closed tabs filter the tickets by status","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300928","INS-INSP-14 Reject with a note is recorded as Rejected","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","31264","SP-HOME-04 each card shows status, request code, services and buttons for its status","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-HOME — service requests","",""
+"","0","rejects ""xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"" (too-long)","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/services/deep-linking/__tests__","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","1134141","e2e/specs/inspector/inspection.e2e.ts","E2E (Detox)","2026-11-02","broken","2026-11-02","","(test file execution)","",""
+"DateOfBirthInput Component Tests","3","renders with formatted date when value is set","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/ui/components/form/__tests__","",""
+"","7923","SP-PROF-13 Notifications lists a switch per notification type, without Support Tickets","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","3031","INS-HOME-06 a search with no match says so; the header × closes search","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","2082","INS-MAP-07 Back returns to Home","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-MAP — Map View","",""
+"","5862","INS-EXP-03 Use my current location is offered and works","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-EXP — explore","",""
+"","27098","SP-PROF-04 editing the first name saves (""Profile updated successfully!"") and shows on Profile; then restored","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"","0","needs 5 to 250 characters for a rejection reason (trimmed)","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/serviceRequest/utils/__tests__","",""
+"Working offline (manual chapter 9).
+
+A simulator's network cannot be cut from a test, so the app is relaunched with
+`-kaveE2ENetwork offline` (src/config/e2e.ts), which makes it behave exactly as
+when NetInfo reports no connection: banner, outbox, ""will sync"" messages.
+Relaunching online lets the outbox sync. Requests themselves are not blocked by
+the simulator, so this covers the app's offline mode, not a real dead network.","102102","INS-OFF-01 offline shows the orange bar ""You’re offline — changes will sync when connected.""","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-OFF — working offline","",""
+"Accept or reject a request (manual chapter 4). The reject sheet is checked
+without submitting; accepting and rejecting consume Pending requests.","25373","INS-REQ-04 ✓ accepts a Pending request: ""Inspection accepted"", the card gets Start and map @mutating @smoke","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-REQ — accept or reject","",""
+"","1","accepts a well-formed token","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/services/deep-linking/__tests__","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","3443","INS-HOME-03-Pending the Pending chip lists only Pending requests","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"","0","refuses a new password equal to the current one","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"","14417","SP-AUTH-03 phone mode has the fixed +966 field and validates the number","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — sign in","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","1046","SP-DET-07 Message host opens a conversation with the host","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-DET — service request detail","",""
+"Property Details (manual chapter 5) and Map View (chapter 6).","5254","INS-PROP-03 Show More expands the description and Show Less collapses it","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROP — Property Details","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","12133","SP-ACT-04 Complete asks to confirm; Cancel keeps it Accepted @mutating","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-ACT — respond and complete","",""
+"","4383","SP-MSG-08 Delete chat asks to confirm; Cancel keeps the conversation","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-MSG — messages","",""
+"","17203","INS-AUTH-06 Forgot Password opens the reset screen in the selected mode","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — sign in","",""
+"","70857","INS-AUTH-14 an invite link with a malformed token shows the link error screen","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — set up password link","",""
+"","3","measures straight-line distance in metres","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/utils/__tests__","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","3273","SP-HOME-03-accepted the accepted tab lists only accepted requests","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-HOME — service requests","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","724","SP-DET-05-Propertyaccessmethods Propertyaccessmethods expands and collapses","E2E (Detox)","2026-11-02","broken","2026-11-02","","SP-DET — service request detail","",""
+"Working offline (manual chapter 9).
+
+A simulator's network cannot be cut from a test, so the app is relaunched with
+`-kaveE2ENetwork offline` (src/config/e2e.ts), which makes it behave exactly as
+when NetInfo reports no connection: banner, outbox, ""will sync"" messages.
+Relaunching online lets the outbox sync. Requests themselves are not blocked by
+the simulator, so this covers the app's offline mode, not a real dead network.","10700","INS-OFF-07 back online the saved work syncs: pending count clears and the request stays Accepted","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-OFF — working offline","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","4291","SP-HOME-07 pull to refresh reloads the list","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-HOME — service requests","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","26030","INS-SUP-08 search by title finds the ticket (BUG-008: the API searches ticket IDs only)","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","1237","SP-HOME-02 the status tabs are All, Assigned, Accepted, Rejected, Completed; All is selected","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-HOME — service requests","",""
+"","0","lists the five status tabs in order","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/serviceRequest/utils/__tests__","",""
+"","39661","INS-AUTH-08 signs in with email and password and lands on Home @smoke","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — sign in","",""
+"","41665","SP-AUTH-08 signs in with email and password and lands on Home @smoke","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — sign in","",""
+"","15804","INS-AUTH-13 an invite link while signed in asks to log out first; Cancel keeps the session","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-AUTH — set up password link","",""
+"Inspector Home (manual chapter 3): header, filters, search, request cards.","5868","INS-HOME-04 pull to refresh resets the filter to All","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-HOME — Home","",""
+"","0","needs a description of 10 to 2,000 characters","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/support/utils/__tests__","",""
+"","17784","SP-PROF-06 Address shows its fields; an empty city is refused with ""City is required""","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"Carry out an inspection and submit the verdict (manual chapters 7 and 8).
+
+One inspection is taken from start to Completed, step by step, so the tests
+run in order and share state: start → checklists → item form rules → record
+items → pause/continue → verdict → completed view → edit an item.
+Needs an Assigned/Accepted request (it is consumed).","300503","INS-INSP-13 Alert with a note is recorded as Alert","E2E (Detox)","2026-11-02","broken","2026-11-02","","INS-INSP — inspect and submit @mutating","",""
+"","31202","INS-EXP-02 search area suggests places; choosing one moves the map there","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-EXP — explore","",""
+"","6792","SP-PROF-03 the gender dropdown offers Male, Female and Other","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-PROF — profile","",""
+"RejectServiceRequestSheet: the reason must be 5–250 characters before it can be sent.","6","caps the reason at 250 characters","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/modules/serviceRequest/components/__tests__","",""
+"","16438","SP-AUTH-13 an invite link while signed in asks to log out first; Cancel keeps the session","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-AUTH — set up password link","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","7934","INS-SUP-10 you can add a message to an open ticket","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","1592","SP-DET-04 Location shows the address and View Direction","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-DET — service request detail","",""
+"","25377","SP-NOTIF-02 Mark All Read clears the unread badge","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-NOTIF — notifications","",""
+"","5950","INS-PROF-02 Personal information shows name, gender, date of birth, phone and email","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"Support (manual chapter 13): Support Centre, new ticket, ticket chat.
+Creates one ticket per run (titled ""E2E …"") so the chat tests have one to open.","12053","INS-SUP-08b search by ticket ID finds the ticket; a search with no match says so","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-SUP — support","",""
+"","9323","INS-PROF-12 Messages in the menu opens the inbox","E2E (Detox)","2026-11-02","passed","2026-11-02","","INS-PROF — profile","",""
+"","0","normalizes the ops role and refuses unknown roles","Unit (Jest)","2026-11-02","passed","2026-11-02","","src/services/deep-linking/__tests__","",""
+"Responding to and completing service requests, and the request detail page.
+Accept / reject / complete cannot be undone: an admin assigns fresh requests first.","1806","SP-DET-09 Back returns to Home","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-DET — service request detail","",""
+"Service-provider Home: the requests an admin assigned, status tabs, search.
+(Not in the inspector manual: covers the provider features in src/modules/serviceRequest.)","4651","SP-HOME-03-assigned the assigned tab lists only assigned requests","E2E (Detox)","2026-11-02","passed","2026-11-02","","SP-HOME — service requests","",""
