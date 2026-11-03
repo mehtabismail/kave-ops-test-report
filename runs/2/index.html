@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="allure-report-uuid" content="137e9c85-c8ea-4697-93eb-00321e072832">
+    <title>Allure Report</title>
+    <link rel="icon" href="assets/favicon-BDLHVmV7.ico">
+    <!-- allure-core-head:start -->
+    <!-- allure-core-head:end -->
+</head>
+<body>
+    <div id="alert"></div>
+    <div id="content">
+        <span class="spinner">
+            <span class="spinner__circle"></span>
+        </span>
+    </div>
+    <div id="popup"></div>
+    <!-- allure-core-body:start -->
+    <script>
+        window.__allureCoreLoaded = new Promise(function (resolve, reject) {
+        window.__allureResolveCoreLoaded = resolve;
+        window.__allureRejectCoreLoaded = reject;
+    });
+    </script>
+    <script src="assets/index-CqG5t6J2.js"></script>
+    <script>
+        if (typeof window.__allureResolveCoreLoaded === "function") {
+            window.__allureResolveCoreLoaded([]);
+        }
+    </script>
+    <!-- allure-core-body:end -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVWC4GKEYS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FVWC4GKEYS', {
+          'allureVersion': '2.46.1',
+          'reportUuid': '137e9c85-c8ea-4697-93eb-00321e072832',
+          'single_file': false
+        });
+    </script>
+
+<!-- kave-run-nav: added by scripts/test-report/inject-report-nav.js -->
+<style>
+  .kave-run-nav {
+    position: fixed; right: 16px; bottom: 16px; z-index: 2147483000;
+    display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
+    font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .kave-run-nav a { text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+  .kave-run-nav-btn {
+    background: #1f2937; color: #fff; border-radius: 999px; padding: 9px 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.28); font-weight: 600;
+  }
+  .kave-run-nav-btn:hover { background: #111827; }
+  .kave-run-nav-archived {
+    background: #fef3c7; color: #7c4a03; border: 1px solid #f2c25c;
+    border-radius: 999px; padding: 7px 13px; font-weight: 600;
+    box-shadow: 0 2px 10px rgba(0,0,0,.16);
+  }
+  .kave-run-nav-archived:hover { background: #fde9ad; }
+  @media print { .kave-run-nav { display: none; } }
+</style>
+<div class="kave-run-nav" id="kave-run-nav"></div>
+<script>
+(function () {
+  var BASE = "https://mehtabismail.github.io/kave-ops-test-report/";
+  var host = document.getElementById("kave-run-nav");
+  if (!host) return;
+
+  // An archived copy lives at <base>runs/<n>/. Detected from the path so that a single
+  // injected block behaves correctly in both the root report and every archived copy.
+  var archived = (location.pathname || "").match(/\/runs\/(\d+)\//);
+
+  if (archived) {
+    var back = document.createElement("a");
+    back.className = "kave-run-nav-archived";
+    back.href = BASE;
+    back.textContent = "Archived run #" + archived[1] + " · open latest";
+    back.title = "You are viewing an archived run, not the newest one";
+    host.appendChild(back);
+  }
+
+  var history = document.createElement("a");
+  history.className = "kave-run-nav-btn";
+  history.href = BASE + "runs/";
+  history.textContent = "Run history";
+  history.title = "Browse past runs, filtered by date";
+  host.appendChild(history);
+})();
+</script>
+</body>
+</html>
